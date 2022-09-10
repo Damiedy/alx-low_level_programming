@@ -5,7 +5,7 @@
 /* more headers goes there */
 
 /**
- * main -Entry Point
+ * main - Entry Point
  *
  * Description: Checks if random number generated is
  * positive(+) or negative(-).
