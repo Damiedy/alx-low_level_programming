@@ -1,92 +1,28 @@
 #include "main.h"
-
 /**
- * i_equals_to_one_or_zero - Code for i equals to 1 or 0
- *
- * @i: integer from jack_bauer function
- *
- * Return: void
- */
-void i_equals_to_one_or_zero(int i)
-
-
-void i_equals_to_two(int i);
-
-/**
- * Jack_bauer - Prints every minute of the day of Jack Bauer, starting
- * from 00:00 to 23:59.
- *
- * Return:void
+ * jack_bauer - prints every minute of the day of jack bauer
+ * starting from 00:00 to 23:59.
+ * return: 0
  */
 void jack_bauer(void)
 {
-	int i;
+	int h, m;
 
-	for (i = '0'; i <= '2'; i++)
+	h = 0;
+	while (h < 24)
 	{
-		if (i == '1' || i == '0')
+		m = 0
+		while (m < 60)
 		{
-			i_equals_to_one_or_zero(i);
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
+			m++;
 		}
-		else if (i == '2')
-		{
-			i_equals_to_two(i);
-		}
+		h++;
 	}
 }
 
-/**
- * i_equals_to_one_or_zero - Code for i equal to 1 or 0
- *
- * @i: integer from jack_bauer function
- *
- * Return: void
- */
-void i_equals_to_one_or_zero(int i)
-{
-	int j, k, l;
-
-	for (j = '0'; j <= '9'; j++)
-	{
-		for (k = '0'; k <= '5'; k++)
-		{
-			for (l = '0'; l <= '9'; l++)
-			{
-				_putchar(i);
-				_putchar(j);
-				_putchar(':');
-				_putchar(k);
-				_putchar(l);
-				_putchar('\n');
-			}
-		}
-	}
-}
-
-/**
- * i_equals_to_two - Code for i equal to two
- *
- * @i: integer from jack_bauer function
- *
- * Return: void
- */
-void i_equals_to_two(int i)
-{
-	int j, k, l;
-
-	for (j = '0'; j <= '3'; j++)
-	{
-		for (k = '0'; k <= '5'; k++)
-		{
-			for (l = '0'; l <= '9'; l++)
-			{
-				_putchar(i);
-				_putchar(j);
-				_putchar(':');
-				_putchar(k);
-				_putchar(l);
-				_putchar('\n');
-			}
-		}
-	}
-}
