@@ -1,10 +1,10 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
  * main - Entry Point
  *
- * Description: A program that prints _putchar, followed by a new line.
+ * Description: A program that prints _putchar,
+ * followed by a new line.
  *
  * Return: 0(Success)
  */
