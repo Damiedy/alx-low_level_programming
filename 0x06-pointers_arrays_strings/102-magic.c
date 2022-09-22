@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -29,4 +30,3 @@ int main(void)
 	printf("a[2[ = %d\n", a[2]);
 	return (0);
 }
-
