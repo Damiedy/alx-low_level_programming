@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strspn - function that the length of occurent of a string
+ * _strspn - function that gets the length of occurent of a string
  * @s: string to be looked into
  * @accept: character to match
  * Return: length of substring
@@ -16,7 +16,7 @@ unsigned int _strspn(char *s, char *accept)
 		for (j = 0; accept[j] != s[i]; j++)
 		{
 			if (accept[j] == '\0')
-			return (j);
+			return (i);
 		}
 	}
 
